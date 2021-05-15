@@ -15,7 +15,15 @@ Generates a standalone Angular (12.x) app with the following features:
 yarn global add @angular-devkit/schematics-cli @angular/cli
 
 schematics .:app {name} {options}
+
+cd {new app directory}
+yarn watch
+yarn start
 ```
+
+> Once started, navigate to http://localhost:{port} (default is http://localhost:3000)
+
+![image](https://user-images.githubusercontent.com/14102723/118379040-bec8e400-b5a5-11eb-8e37-195719eb62e0.png)  
 
 Option | Description | Type | Default | Required
 -------|-------------|------|---------|---------
