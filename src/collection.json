@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "app": {
+      "aliases": ["application"],
+      "description": "A standalone, pre-configured Angular + Material application.",
+      "factory": "./app",
+      "schema": "./app/schema.json"
+    }
+  }
+}
