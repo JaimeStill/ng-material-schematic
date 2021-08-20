@@ -1,10 +1,11 @@
 {
-  "name": "update",
+  "name": "<%= dasherize(app) %>",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
     "build:core": "ng build core",
+    "deploy": "ng build --configuration development --output-path docs --base-href /<%= dasherize(app) %>/ && copy docs\\index.html docs\\404.html",
     "start": "ng serve --configuration development",
     "watch": "ng build core --watch --configuration development"
   },
