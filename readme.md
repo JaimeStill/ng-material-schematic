@@ -32,7 +32,7 @@ Option | Description | Type | Default | Required
 `library` | The name of the library | `string` | `core` | No
 `port` | The port the app will run on | `number` | `3000` | No
 `directory` | The root directory of the workspace | `string` | N/A (defaults to `name` if not provided) | No
-`commit` | Initial git repository commit information | `boolean | { name: string, email: string, message: string }` | true | No
+`commit` | Initial git repository commit information | `boolean` | { name: string, email: string, message: string }` | true | No
 `packageManager` | The package manager used to install dependencies | `string` | `yarn` | No
 `skipDirectory` | Whether to move the workspace into a directory | `boolean` | false | No
 `skipInstall` | When set, do not install dependency packages | `boolean` | false | No
