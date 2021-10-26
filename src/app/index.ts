@@ -21,6 +21,13 @@ import { strings } from '@angular-devkit/core';
 import { validateProjectName } from '@schematics/angular/utility/validation';
 import { Schema } from './schema';
 
+export function spacify(str: string): string {
+  return strings.dasherize(str)
+    .split('-')
+    .map((part) => strings.capitalize(part))
+    .join(' ');
+}
+
 export default function (options: Schema): Rule {
   if (!options.name)
     throw new SchematicsException(`Invalid options, "name" is required.`);
@@ -35,6 +42,7 @@ export default function (options: Schema): Rule {
 
   const templateSource = apply(url('./files'), [
     template({
+      spacify,
       ...strings,
       ...options
     }),

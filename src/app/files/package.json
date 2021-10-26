@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "build:core": "ng build core",
+    "build:core": "ng build <%= dasherize(library) %>",
     "deploy": "ng build --configuration development --output-path docs --base-href /<%= dasherize(app) %>/ && copy docs\\index.html docs\\404.html",
     "start": "ng serve --configuration development",
-    "watch": "ng build core --watch --configuration development"
+    "watch": "ng build <%= dasherize(library) %> --watch --configuration development"
   },
   "private": true,
   "dependencies": {
@@ -33,10 +33,8 @@
     "@angular/cli": "^12.2.1",
     "@angular/compiler-cli": "^12.2.1",
     "@angular/language-service": "^12.2.1",
-    "@fortawesome/fontawesome-free": "^5.15.4",
     "@types/node": "^16.6.1",
     "ng-packagr": "^12.2.0",
-    "roboto-fontface": "^0.10.0",
     "typescript": "^4.3.5"
   }
 }

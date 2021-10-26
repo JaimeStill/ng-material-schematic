@@ -4,7 +4,7 @@
   "cli": {
     "packageManager": "<%= packageManager %>"
   },
-  "newProjectRoot": "projects",
+  "newProjectRoot": "src",
   "projects": {
     "<%= dasherize(app) %>": {
       "projectType": "application",
@@ -41,21 +41,21 @@
         }
       },
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/<%= dasherize(app) %>",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/<%= dasherize(app) %>",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "src/<%= dasherize(app) %>/index.html",
+            "main": "src/<%= dasherize(app) %>/main.ts",
+            "polyfills": "src/<%= dasherize(app) %>/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/<%= dasherize(app) %>/favicon.ico",
+              "src/<%= dasherize(app) %>/assets"
             ],
             "styles": [
               "theme/theme.scss"
@@ -80,8 +80,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/<%= dasherize(app) %>/environments/environment.ts",
+                  "with": "src/<%= dasherize(app) %>/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -123,21 +123,21 @@
     },
     "<%= dasherize(library) %>": {
       "projectType": "library",
-      "root": "projects/core",
-      "sourceRoot": "projects/core/src",
+      "root": "src/<%= dasherize(library) %>",
+      "sourceRoot": "src/<%= dasherize(library) %>/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/<%= dasherize(library) %>/ng-package.json"
+            "project": "src/<%= dasherize(library) %>/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/<%= dasherize(library) %>/tsconfig.lib.prod.json"
+              "tsConfig": "src/<%= dasherize(library) %>/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/<%= dasherize(library) %>/tsconfig.lib.json"
+              "tsConfig": "src/<%= dasherize(library) %>/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"

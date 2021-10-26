@@ -2,7 +2,7 @@
          [ngClass]="themer.isLight ? 'app-light' : 'app-dark'">
   <mat-toolbar color="primary"
                class="app-toolbar sticky-top">
-    <span fxFlex><%= classify(app) %></span>
+    <span fxFlex><%= spacify(app) %></span>
     <button mat-icon-button
             [ngClass]="themer.isLight ? 'color-amber' : 'color-text'"
             (click)="themer.toggleTheme()">
