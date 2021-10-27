@@ -1,1 +1,1 @@
-# <%= classify(name) %>
+# <%= spacify(name) %>
