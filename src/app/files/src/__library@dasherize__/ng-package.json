@@ -2,6 +2,6 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/<%= dasherize(library) %>",
   "lib": {
-    "entryFile": "src/api.ts"
+    "entryFile": "src/index.ts"
   }
 }
