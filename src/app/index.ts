@@ -18,7 +18,6 @@ import {
 } from '@angular-devkit/schematics/tasks';
 
 import { strings } from '@angular-devkit/core';
-import { validateProjectName } from '@schematics/angular/utility/validation';
 import { Schema } from './schema';
 
 export function spacify(str: string): string {
@@ -31,8 +30,6 @@ export function spacify(str: string): string {
 export default function (options: Schema): Rule {
   if (!options.name)
     throw new SchematicsException(`Invalid options, "name" is required.`);
-
-  validateProjectName(options.name);
 
   if (!options.directory)
     options.directory = options.name;

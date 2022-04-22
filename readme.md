@@ -12,13 +12,13 @@ Generates a standalone Angular (12.x) app with the following features:
 ## Usage
 
 ```
-yarn global add @angular-devkit/schematics-cli @angular/cli
+npm i -g @angular-devkit/schematics-cli @angular/cli
 
 schematics .:app {name} {options}
 
 cd {new app directory}
-yarn watch
-yarn start
+npm run watch
+npm run start
 ```
 
 > Once started, navigate to http://localhost:{port} (default is http://localhost:3000)
@@ -33,7 +33,7 @@ Option | Description | Type | Default | Required
 `port` | The port the app will run on | `number` | `3000` | No
 `directory` | The root directory of the workspace | `string` | N/A (defaults to `name` if not provided) | No
 `commit` | Initial git repository commit information | `boolean` | { name: string, email: string, message: string }` | true | No
-`packageManager` | The package manager used to install dependencies | `string` | `yarn` | No
+`packageManager` | The package manager used to install dependencies | `string` | `npm` | No
 `skipDirectory` | Whether to move the workspace into a directory | `boolean` | false | No
 `skipInstall` | When set, do not install dependency packages | `boolean` | false | No
 `skipGit` | When set, does not initialize a git repository | `boolean` | false | No

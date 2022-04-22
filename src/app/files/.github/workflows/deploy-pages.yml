@@ -25,9 +25,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Build Deployed App
       run: |
-        yarn install
-        yarn build:core
-        yarn deploy
+        npm install
+        npm run build:core
+        npm run deploy
     - name: Commit to Repo
       run: |
         git config --global user.name 'actions'

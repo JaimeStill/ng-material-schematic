@@ -61,7 +61,7 @@
       "description": "The package manager used to install dependencies.",
       "type": "string",
       "enum": ["npm", "yarn", "pnpm", "cnpm"],
-      "default": "yarn"
+      "default": "npm"
     },
     "skipDirectory": {
       "description": "Whether to move the workspace into a directory. Uses name if the directory schema property is not specified.",
