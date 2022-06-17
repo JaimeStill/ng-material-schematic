@@ -6,6 +6,16 @@ name: Deploy Pages
 on:
   push:
     branches: [ main ]
+  paths-ignore:
+    - .angular
+    - node_modules
+    - .browserlistrc
+    - .editorconfig
+    - .gitignore
+    - angular.json
+    - install-deps.cmd
+    - package-lock.json
+    - README.md
 
 jobs:
   build:
@@ -26,7 +36,7 @@ jobs:
     - name: Build Deployed App
       run: |
         npm install
-        npm run build:core
+        npm run build-core
         npm run deploy
     - name: Commit to Repo
       run: |
