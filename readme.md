@@ -12,7 +12,7 @@ Generates a standalone Angular (12.x) app with the following features:
 ## Usage
 
 ```
-npm i -g @angular-devkit/schematics-cli @angular/cli
+npm i -g @angular-devkit/schematics-cli @angular/cli npm-check-updates npm
 
 schematics .:app {name} {options}
 
