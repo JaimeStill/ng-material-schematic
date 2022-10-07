@@ -6,8 +6,8 @@
     "types": []
   },
   "files": [
-    "src/<%= dasherize(app) %>/main.ts",
-    "src/<%= dasherize(app) %>/polyfills.ts"
+    "src/main.ts",
+    "src/polyfills.ts"
   ],
   "include": [
     "src/**/*.d.ts"

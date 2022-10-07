@@ -19,12 +19,6 @@
       "type": "string",
       "format": "html-selector"
     },
-    "library": {
-      "description": "The name of the library.",
-      "type": "string",
-      "format": "html-selector",
-      "default": "core"
-    },
     "port": {
       "description": "The port to run the app on.",
       "type": "number",

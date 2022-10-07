@@ -7,7 +7,6 @@ export interface GitCommit {
 export interface Schema {
   name: string;
   app: string;
-  library: string;
   port: number;
   directory: string;
   commit: GitCommit | boolean;

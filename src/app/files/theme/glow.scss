@@ -3,7 +3,7 @@
 
 @mixin style-glow($palette) {
   @each $key, $value in $palette {
-    @for $i from 1 through 24 {
+    @for $i from 1 through 16 {
       .glow-#{$i}-#{$key} {
         @include mat.elevation($i, map.get($value, "color"));
       }
