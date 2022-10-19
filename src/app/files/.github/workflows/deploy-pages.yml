@@ -2,7 +2,6 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: Deploy Pages
-
 on:
   push:
     branches: [ main ]
@@ -16,17 +15,12 @@ on:
     - install-deps.cmd
     - package-lock.json
     - README.md
-
 jobs:
   build:
-
     runs-on: windows-latest
-
     strategy:
       matrix:
         node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -36,7 +30,6 @@ jobs:
     - name: Build Deployed App
       run: |
         npm install
-        npm run build-core
         npm run deploy
     - name: Commit to Repo
       run: |

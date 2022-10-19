@@ -14,7 +14,6 @@ npm i -g @angular-devkit/schematics-cli @angular/cli npm-check-updates npm
 schematics .:app {name} {options}
 
 cd {new app directory}
-npm run watch
 npm run start
 ```
 
