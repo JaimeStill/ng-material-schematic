@@ -37,7 +37,7 @@ Option | Description | Type | Default | Required
 `app` | The name of the application | `string` | N/A (defaults to `name` if not provided) | No
 `port` | The port the app will run on | `number` | `3000` | No
 `directory` | The root directory of the workspace | `string` | N/A (defaults to `name` if not provided) | No
-`commit` | Initial git repository commit information | `boolean` | { name: string, email: string, message: string }` | true | No
+`commit` | Initial git repository commit information | `boolean` | `{ name: string, email: string, message: string }` | true | No
 `package-manager` | The package manager used to install dependencies | `string` | `npm` | No
 `skip-directory` | Whether to move the workspace into a directory | `boolean` | false | No
 `skip-install` | When set, do not install dependency packages | `boolean` | false | No
