@@ -8,7 +8,7 @@ Generates a standalone Angular (14.x) app with the following features:
 
 ## Usage
 
-```
+```bash
 # fork or clone repo and open terminal to directory
 
 # install dependencies and build schematic projects
@@ -19,7 +19,7 @@ npm build
 # generate the app
 # this example assumes options are --skip-git --skip-install
 schematics .:app {name} {options} --debug=false
-move {name} {directory}
+mv {name} {directory}
 cd {new app directory}
 
 # install dependencies and run
