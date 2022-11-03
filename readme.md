@@ -8,12 +8,22 @@ Generates a standalone Angular (14.x) app with the following features:
 
 ## Usage
 
-```
+```bash
+# fork or clone repo and open terminal to directory
+
+# install dependencies and build schematic projects
 npm i -g @angular-devkit/schematics-cli @angular/cli npm-check-updates npm
+npm i
+npm build
 
-schematics .:app {name} {options}
-
+# generate the app
+# this example assumes options are --skip-git --skip-install
+schematics .:app {name} {options} --debug=false
+mv {name} {directory}
 cd {new app directory}
+
+# install dependencies and run
+npm i
 npm run start
 ```
 
@@ -27,8 +37,8 @@ Option | Description | Type | Default | Required
 `app` | The name of the application | `string` | N/A (defaults to `name` if not provided) | No
 `port` | The port the app will run on | `number` | `3000` | No
 `directory` | The root directory of the workspace | `string` | N/A (defaults to `name` if not provided) | No
-`commit` | Initial git repository commit information | `boolean` | { name: string, email: string, message: string }` | true | No
-`packageManager` | The package manager used to install dependencies | `string` | `npm` | No
-`skipDirectory` | Whether to move the workspace into a directory | `boolean` | false | No
-`skipInstall` | When set, do not install dependency packages | `boolean` | false | No
-`skipGit` | When set, does not initialize a git repository | `boolean` | false | No
+`commit` | Initial git repository commit information | `boolean` | `{ name: string, email: string, message: string }` | true | No
+`package-manager` | The package manager used to install dependencies | `string` | `npm` | No
+`skip-directory` | Whether to move the workspace into a directory | `boolean` | false | No
+`skip-install` | When set, do not install dependency packages | `boolean` | false | No
+`skip-git` | When set, does not initialize a git repository | `boolean` | false | No
