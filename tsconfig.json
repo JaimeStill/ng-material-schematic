@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "tsconfig",
     "lib": [
-      "es2018",
+      "ES2022",
       "dom"
     ],
     "declaration": true,
@@ -19,7 +19,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "target": "esnext",
+    "target": "ES2022",
     "types": [
       "node"
     ]

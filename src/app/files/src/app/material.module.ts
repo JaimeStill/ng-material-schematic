@@ -8,11 +8,6 @@ import {
   MatRippleModule
 } from '@angular/material/core';
 
-import {
-  FlexLayoutModule,
-  GridModule
-} from '@angular/flex-layout';
-
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -44,8 +39,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   exports: [
     ClipboardModule,
     DragDropModule,
-    FlexLayoutModule,
-    GridModule,
     MatBadgeModule,
     MatButtonModule,
     MatButtonToggleModule,

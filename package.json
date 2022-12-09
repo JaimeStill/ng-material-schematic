@@ -18,33 +18,13 @@
   },
   "homepage": "https://github.com/JaimeStill/ng-material-schematic#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "@angular-devkit/core": "^15.0.2",
-    "@angular-devkit/schematics": "^15.0.2",
-    "@schematics/angular": "^15.0.2",
-    "typescript": "^4.9.3"
+    "@angular-devkit/core": "^15.0.3",
+    "@angular-devkit/schematics": "^15.0.3",
+    "@schematics/angular": "^15.0.3",
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
-    "@types/node": "^18.11.10",
-=======
-<<<<<<< HEAD
-    "@angular-devkit/core": "^14.2.8",
-    "@angular-devkit/schematics": "^14.2.8",
-    "@schematics/angular": "^14.2.8",
-    "typescript": "^4.8.4"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-=======
-    "@angular-devkit/core": "^14.2.7",
-    "@angular-devkit/schematics": "^14.2.7",
-    "@schematics/angular": "^14.2.7",
-    "typescript": "^4.8.4"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.7",
->>>>>>> fafcfe796498778593f87a348162ccd7e1362b40
->>>>>>> faa0d5832dfaddabce6b5af9dcd8289603b0ba50
+    "@types/node": "^18.11.12",
     "jsonc-parser": "^3.2.0"
   }
 }
