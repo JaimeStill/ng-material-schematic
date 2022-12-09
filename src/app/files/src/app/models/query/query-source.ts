@@ -6,13 +6,13 @@ import { environment } from '../../../environments/environment';
 
 export class QuerySource<T> extends CoreQuery<T> {
     constructor(
-        protected http: HttpClient,
-        protected snacker: SnackerService,
+        http: HttpClient,
+        snacker: SnackerService,
         private api: string | null = null,
         private propertyName: string = 'id',
         private isDescending: boolean = false,
-        protected initialPageSize: number = 20,
-        public pageSizeOptions: number[] = [5, 10, 20, 50, 100]
+        initialPageSize: number = 20,
+        pageSizeOptions: number[] = [5, 10, 20, 50, 100]
     ) {
         super(environment.api, http, snacker, initialPageSize, pageSizeOptions);
 

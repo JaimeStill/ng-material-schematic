@@ -1,5 +1,7 @@
-<section [fxLayout]="layout"
-         [fxLayoutAlign]="alignment"
+<div flexContainer
+         [flexDirection]="direction"
+         [flexMain]="main"
+         [flexCross]="cross"
          [class]="options"
          [style.width.px]="width"
          [style.minWidth.px]="minWidth"
@@ -7,4 +9,4 @@
          [style.padding.px]="padding"
          [style.margin.px]="margin">
     <ng-content></ng-content>
-</section>
+</div>

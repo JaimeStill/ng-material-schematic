@@ -34,7 +34,7 @@ export class SelectorComponent<T> implements OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges): void {
-        if (changes.selected)
+        if (changes['selected'])
             this.updateSelected();
     }
 }

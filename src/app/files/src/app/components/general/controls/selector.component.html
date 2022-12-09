@@ -4,10 +4,12 @@
       [options]="options"
       (click)="select.emit(data)">
     <ng-content></ng-content>
-    <section fxLayout="column"
-             fxLayoutAlign="center center"
-             class="background-default rounded-right p4">
+    <div flexContainer
+         flexDirection="column"
+         flexMain="center"
+         flexCross="center"
+         class="background-default rounded-right p4">
         <mat-icon class="m4"
                   [ngClass]="selected ? 'color-primary' : 'color-default'">{{selectedIcon}}</mat-icon>
-    </section>
+    </div>
 </card>

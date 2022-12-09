@@ -25,6 +25,9 @@ schematics .:app {name} {options} --debug=false
 mv {name} {directory}
 cd {new app directory}
 
+# example
+schematics .:app update --skip-git --skip-install --debug=false
+
 # install dependencies and run
 npm i
 npm run start
@@ -32,7 +35,8 @@ npm run start
 
 > Once started, navigate to http://localhost:{port} (default is http://localhost:3000)
 
-![image](https://user-images.githubusercontent.com/14102723/118379040-bec8e400-b5a5-11eb-8e37-195719eb62e0.png)  
+![image](https://user-images.githubusercontent.com/14102723/206757672-4f0497e7-cf16-4fda-9835-ab6a041a0026.png)
+ 
 
 Option | Description | Type | Default | Required
 -------|-------------|------|---------|---------
