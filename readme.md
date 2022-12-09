@@ -16,6 +16,9 @@ npm i -g @angular-devkit/schematics-cli @angular/cli npm-check-updates npm
 npm i
 npm build
 
+# or, simply run:
+.\update.ps1
+
 # generate the app
 # this example assumes options are --skip-git --skip-install
 schematics .:app {name} {options} --debug=false

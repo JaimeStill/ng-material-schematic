@@ -1,0 +1,19 @@
+src/app/components
+src/app/directives/
+src/app/models/query/query-source.ts
+src/app/models/utils/
+src/app/models/index.ts
+src/app/pipes/
+src/app/types/
+src/app/app.component.*
+src/app/app.module.ts
+src/app/material.module.ts
+theme/
+angular.json
+package.json
+tsconfig.app.json
+tsconfig.json
+update.ps1
+
+~ src/polyfills.ts
+~ .browserslistrc
