@@ -13,3 +13,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Docker
+
+> To use the latest LTS node Docker image, specify node:lts-alpine instead of node:latest
+
+```
+docker build -t {tag} .
+
+docker run -it --rm -p 3000:80 {tag}
+```
+
