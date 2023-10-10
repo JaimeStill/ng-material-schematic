@@ -1,10 +1,10 @@
 {
-    "name": "<%= dasherize(app) %>",
+    "name": "update",
     "version": "0.0.1",
     "scripts": {
         "ng": "ng",
         "build": "ng build --configuration development",
-        "deploy": "ng build --output-path docs --base-href /<%= dasherize(app) %>/ && copy docs\\index.html docs\\404.html",
+        "deploy": "ng build --output-path docs --base-href /update/ && copy docs\\index.html docs\\404.html",
         "start": "ng serve --configuration development"
     },
     "private": true,
@@ -14,19 +14,19 @@
         "@angular/common": "^16.2.4",
         "@angular/compiler": "^16.2.4",
         "@angular/core": "^16.2.4",
-        "@angular/forms": "^16.2.4",
-        "@angular/material": "^16.2.3",
+        "@angular/forms": "^16.2.8",
+        "@angular/material": "^16.2.7",
         "@angular/platform-browser": "^16.2.4",
-        "@angular/platform-browser-dynamic": "^16.2.4",
-        "@angular/router": "^16.2.4",
+        "@angular/platform-browser-dynamic": "^16.2.8",
+        "@angular/router": "^16.2.8",
         "rxjs": "~7.8.1",
         "tslib": "^2.6.2",
-        "zone.js": "~0.13.1"
+        "zone.js": "^0.13.3"
     },
     "devDependencies": {
-        "@angular-devkit/build-angular": "^16.2.1",
+        "@angular-devkit/build-angular": "^16.2.5",
         "@angular/cli": "~16.2.1",
-        "@angular/compiler-cli": "^16.2.4",
+        "@angular/compiler-cli": "^16.2.8",
         "typescript": "^5.1.6"
     }
 }
