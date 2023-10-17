@@ -14,6 +14,7 @@ src/**/*.d.ts
 
 # Node
 /node_modules
+/node_cache/_logs
 npm-debug.log
 yarn-error.log
 
