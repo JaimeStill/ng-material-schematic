@@ -28,8 +28,5 @@
         "@angular/cli": "~16.2.1",
         "@angular/compiler-cli": "^16.2.8",
         "typescript": "^5.1.6"
-    },
-    "optionalDependencies": {
-      "@esbuild/linux-x64": "^0.18.17"
     }
 }
