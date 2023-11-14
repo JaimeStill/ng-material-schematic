@@ -35,7 +35,7 @@ npm run start:dev
 
 > Once started, navigate to http://localhost:{port} (default is http://localhost:3000)
 
-![image](https://github.com/JaimeStill/ng-material-schematic/assets/14102723/49a2c8b1-f743-4eb9-8361-7ccb04b63e7c)
+![image](https://github.com/JaimeStill/ng-material-schematic/assets/14102723/5a3d6316-4a36-4def-adb5-f2c66c8aa495)
  
 
 Option | Description | Type | Default | Required
