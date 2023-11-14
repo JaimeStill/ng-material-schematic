@@ -1,11 +1,9 @@
 @use '@angular/material' as mat;
 @use './palette.scss';
 
-@import './flex.scss';
 @import './layout.scss';
 @import './color.scss';
 @import './material.scss';
-@import './typography.scss';
 @import './utility.scss';
 
 @include mat.core();
