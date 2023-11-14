@@ -22,20 +22,20 @@ npm build
 # generate the app
 # this example assumes options are --skip-git --skip-install
 schematics .:app {name} {options} --debug=false
-mv {name} {directory}
-cd {new app directory}
 
 # example
 schematics .:app update --skip-git --skip-install --debug=false
 
+mv {name} {directory}
+cd {new app directory}
 # install dependencies and run
 npm i
-npm run start
+npm run start:dev
 ```
 
 > Once started, navigate to http://localhost:{port} (default is http://localhost:3000)
 
-![image](https://user-images.githubusercontent.com/14102723/206757672-4f0497e7-cf16-4fda-9835-ab6a041a0026.png)
+![image](https://github.com/JaimeStill/ng-material-schematic/assets/14102723/49a2c8b1-f743-4eb9-8361-7ccb04b63e7c)
  
 
 Option | Description | Type | Default | Required
