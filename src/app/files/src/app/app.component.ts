@@ -22,8 +22,6 @@ import { ThemeService } from './core';
   styleUrl: 'app.component.scss'
 })
 export class AppComponent {
-  title = 'playground';
-
   constructor(
     public themer: ThemeService
   ) { }
