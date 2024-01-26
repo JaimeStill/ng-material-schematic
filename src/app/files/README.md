@@ -21,6 +21,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
 docker build -t {tag} .
 
-docker run -it --rm -p 3000:80 {tag}
+docker run -it --rm -p <%= port %>:80 {tag}
 ```
 
