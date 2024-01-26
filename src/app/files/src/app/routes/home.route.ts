@@ -13,6 +13,7 @@ import { SnackerService } from '../core';
     selector: 'home-route',
     standalone: true,
     templateUrl: 'home.route.html',
+    styleUrl: 'home.route.scss',
     imports: [
         FlexModule,
         MatButtonModule,
@@ -52,7 +53,7 @@ export class HomeRoute {
     constructor(
         private snacker: SnackerService
     ) { }
-    
+
     toggleRender() {
         this.render = !this.render;
     }
