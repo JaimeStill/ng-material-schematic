@@ -1,9 +1,9 @@
 # Angular Material Schematic
 
-Generates a standalone Angular (14.x) app with the following features:
+Generates a standalone Angular app with the following features:
 
 * Angular Material
-* Angular Material Icons
+* Material Symbols integration
 * Light / Dark Mode
 
 ## Usage
@@ -35,8 +35,7 @@ npm run start:dev
 
 > Once started, navigate to http://localhost:{port} (default is http://localhost:3000)
 
-![image](https://github.com/JaimeStill/ng-material-schematic/assets/14102723/5a3d6316-4a36-4def-adb5-f2c66c8aa495)
- 
+![image](https://github.com/JaimeStill/ng-material-schematic/assets/14102723/1a0115b2-6d0d-4803-9252-d14d8fa818d6)
 
 Option | Description | Type | Default | Required
 -------|-------------|------|---------|---------
